@@ -16,17 +16,7 @@ Microbiome-based models did not consistently improve prediction of ICU-acquired 
 
 Follow the first two steps from the pipeline in /burg/pmg/users/se2481/scripts/16S_pipeline/README.md, with the following customizations:
 
-(a) Rename FASTQ files
-```bash
-for dir in 20241029_16S_FB_ICU 20241127_16S_FB_ICU 20241223_16S_FB_ICU; do
-  for f in "$dir"/*_R[12]_001.fastq.gz; do
-    new=$(echo "$f" \
-      | sed -E 's/_L001_R1_001.fastq.gz|_R1_001.fastq.gz/_1.fastq.gz/; s/_L001_R2_001.fastq.gz|_R2_001.fastq.gz/_2.fastq.gz/')
-    mv "$f" "$new"
-  done
-done
-```
-(b) Human genome filtering
+(a) Human genome filtering
 
 Remove human reads with the MMMBP pipeline:
 
@@ -36,7 +26,7 @@ pybatch run_mmmbp.py
 
 Output in tmp/HGF2 contains filtered FASTQs and a df_path table of human-read counts.
 
-(c) Primer trimming
+(b) Primer trimming
 ```bash
 conda activate shared
 python /burg/pmg/users/se2481/scripts/16S_pipeline/trim_primers.py \
