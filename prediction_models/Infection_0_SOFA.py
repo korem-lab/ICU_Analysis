@@ -4,7 +4,7 @@ import pandas as pd
 import re
 from PredictionPipelineV3 import *
 
-### ONLY SOFA ###
+
 merged_df_orig = pd.read_csv("/manitou/pmg/users/mc5672/post_processing_data/merged_df_orig_clr_ra.csv")
 
 features = pd.read_csv("/manitou/pmg/users/mc5672/post_processing_data/unified_scrubbed_counts.csv",index_col=0).columns.to_list()

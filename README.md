@@ -55,10 +55,10 @@ cat *.log | grep 'with adapter'
 Run `Data_Processing.ipynb`
 
 This notebook:
-	•	Performs denoising with DADA2
-	•	Assigns taxonomy
-	•	Removes contaminants using SCRuB
-	•	Computes α- and β-diversity
+* Performs denoising with DADA2
+* Assigns taxonomy
+* Removes contaminants using SCRuB
+* Computes α- and β-diversity
 
 (b) Enrich with Metadata
 
@@ -73,7 +73,7 @@ Choose one of the models in `prediction_models/`, e.g:
 ```bash
 pybatch Death_Next_7_SOFA.py
 ```
-Each notebook is configured to predict a specific outcome (e.g., infection, mortality) using combinations of microbiome and clinical features.
+Model Naming Convention: Models are named using the format {target}_{timepoint}_{features}, where target refers to the outcome (e.g., infection, death), timepoint specifies the prediction window (0 for ICU admission samples only, any for samples from the full ICU stay, next_7 or next_10 for predicting events within 7 or 10 days of sample collection), and features indicates the input data used (asv, sofa, or sofaasv for combined).
 
 6. Evaluate and Plot Results
 
