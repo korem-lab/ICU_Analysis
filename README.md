@@ -14,7 +14,7 @@ Microbiome-based models did not consistently improve prediction of ICU-acquired 
 
 2. Preprocess 16S Sequencing Data (on manitou)
 
-Follow the first two steps from the pipeline in /burg/pmg/users/se2481/scripts/16S_pipeline/, with the following customizations:
+Follow the first two steps from the pipeline in /burg/pmg/users/se2481/scripts/16S_pipeline/README.md, with the following customizations:
 
 (a) Rename FASTQ files
 ```bash
