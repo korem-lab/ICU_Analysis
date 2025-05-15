@@ -9,8 +9,8 @@ Microbiome-based models did not consistently improve prediction of ICU-acquired 
 ## Reproduction Steps ##
 
 1. Access Raw Data
-* Original cohort: /manitou/pmg/users/mc5672/orig_data/raw_data/
-* Validation cohort: /manitou/pmg/users/mc5672/validation_data/2024*/
+* Original cohort: /manitou/pmg/projects/korem_lab/Data/Freedberg_inulin_trial/
+* Validation cohort: /manitou/pmg/projects/korem_lab/Data/Freedberg_inulin_trial/validation_data/
 
 2. Preprocess 16S Sequencing Data (on manitou)
 
