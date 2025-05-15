@@ -56,12 +56,7 @@ cat *.log | grep 'with adapter'
 ```
 (should be high, i.e. 98-99%)
 
-3. (Optionally) Transfer Trimmed Files to Local Machine
-
-```bash
-scp mc5672@128.59.124.102:/manitou/pmg/users/mc5672/orig_data/primer_trimmed/*.gz .
-gunzip *.gz
-```
+3. (Optionally) Transfer Trimmed Files to Local Machine (& gunzip)
 
 4. Process Data
 
